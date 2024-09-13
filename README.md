@@ -28,7 +28,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 _personal bonus:_
 
-- [x] Custom url
 - [x] Configured markdown pages support for easier content management
 
 ## Learn More
