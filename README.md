@@ -39,4 +39,4 @@ To learn more about me, take a look at the following resources:
 
 ## Deployed on Vercel
 
-This project is deployed on Vercel. You can find the live version here: [vercelcsm.bradt.me](https://vercelcsm.bradt.me).
+This project is deployed on Vercel. You can find the live version here: [csm-vercel.vercel.app](https://csm-vercel.vercel.app).
