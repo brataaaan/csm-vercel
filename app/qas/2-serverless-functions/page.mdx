@@ -1,0 +1,58 @@
+import { qaRoutes } from "@/app/_constants/qaRoutes";
+import { QAFooter } from "@/app/_components/QAFooter";
+
+### A customer has reached out asking, “When should I choose to use Edge Functions, Serverless Functions, or Edge Middleware with Vercel?ˮ Write a reply to the customer. If you use documentation or AI as a guide, please only use it to guide your answer. Put it in your own words, please! Feel free to reference documentation in your answer though.
+
+Dear [Customer Name],
+
+Thank you for reaching out to us with your question! I'm happy to help you understand when to choose between Edge Functions, Serverless Functions, or Edge Middleware with Vercel.
+
+#### Edge Functions
+
+Edge Functions are perfect when you need:
+
+- **Fast responses**: They run across Vercel's global Edge Network, reducing latency by processing requests closer to the user.
+- **Efficient cost management**: Ideal for tasks like querying APIs or databases, as costs are based on the compute time, making them budget-friendly for tasks with longer processing times.
+- **Lightweight operations**: If your tasks require minimal compute power and a smaller runtime, Edge Functions are a good choice.
+- **Global reach**: All Edge Functions are distributed globally, making them an excellent fit for worldwide applications.
+
+#### Serverless Functions
+
+Serverless Functions are best when your application demands:
+
+- **More computational resources**: They provide more memory and CPU, which is useful for heavier, more complex tasks.
+- **Larger payloads**: They handle bigger files and more data.
+- **Full Node.js compatibility**: If your application relies on specific Node.js APIs, Serverless Functions offer complete support.
+- **File system operations**: Unlike Edge Functions, Serverless Functions can interact with the file system, making them ideal for tasks like file uploads or complex processing.
+
+#### Edge Middleware
+
+Edge Middleware is ideal for scenarios where you need:
+
+- **Request pre-processing**: It operates before requests hit your cache or application logic, allowing you to modify responses on the fly.
+- **Personalized user experiences**: If your application involves personalization—like content customized based on user location, authentication, or A/B testing—Edge Middleware can deliver tailored results without delay.
+- **Special use cases** like:
+  - Authentication checks
+  - Geolocation-based content or routing
+  - Language-based content delivery
+  - Bot detection or blocking
+
+#### **Which one should you choose?**
+
+- If you need **fast, low-latency responses** for lightweight tasks, go with **Edge Functions**.
+- For **more processing power** and **full Node.js support**, use **Serverless Functions**.
+- If you want to **customize responses before they reach your main application** or enable personalization, consider **Edge Middleware**.
+
+I hope this clarifies your decision! Feel free to reach out if you need more guidance, or if there are specific use cases you'd like to explore further.
+
+Best regards,  
+Johannes
+
+_Helpful links:_
+
+- [Vercel’s Infrastructure Overview](https://vercel.com/docs/infrastructure)
+- [Edge Network](https://vercel.com/docs/edge-network/overview)
+- [Vercel Functions](https://vercel.com/docs/functions)
+- [Edge Middleware Overview](https://vercel.com/docs/functions/edge-middleware)
+
+<QAFooter previous={qaRoutes[0]} next={qaRoutes[2]} />

@@ -1,0 +1,36 @@
+import { qaRoutes } from "@/app/_constants/qaRoutes";
+import { QAFooter } from "@/app/_components/QAFooter";
+
+### A customer is just getting started with Vercel and has questions about recommended options for third-party integrations for Monitoring or Logging. How would you respond to the customer?
+
+Dear [Customer Name],
+
+Thank you for reaching out with your questions, and for choosing Vercel for your project!
+
+### Monitoring
+
+For customers on our **Pro** or **Enterprise** plans, Vercel offers built-in Monitoring. This feature helps you track the health and performance of your applications in real-time.
+
+- **Pro teams**: Monitoring can be enabled from **Settings > Billing** in your team`s dashboard.
+- **Enterprise teams**: Please **contact our sales team** to set up a customized monitoring plan based on your specific needs.
+
+For more details, check out our [Monitoring documentation](https://vercel.com/docs/observability/monitoring/quickstart).
+
+### Logging
+
+Vercel offers several types of logs, depending on your plan and use case:
+
+- **Activity Logs**: These logs provide a chronological view of events on your personal or team account, such as deployment changes and updates to environment variables. Available to Pro and Enterprise customers.
+- **Audit Logs**: Designed for Enterprise customers (currently in beta), Audit Logs track team members' actions, helping you verify who accessed specific features and when.
+- **Build Logs**: Generated during the deployment process, Build Logs show you the progress and details of each deployment. Available to all Vercel plans.
+- **Runtime Logs**: These logs let you inspect and search logs for deployed projects in real-time. They are retained for 3 days, but you can extend this using Log Drains. Available to all Vercel plans.
+- **Log Drains**: Log Drains allow you to export log data to third-party services for easier debugging and analysis. You can configure them through the Vercel dashboard or choose from available integrations in our [Vercel Marketplace](https://vercel.com/marketplace?category=logging). Available for Pro and Enterprise customers.
+
+For more detailed information, visit our [Logging documentation](https://vercel.com/docs/observability/logs).
+
+I hope this helps! If you have any further questions, feel free to reach out.
+
+Best regards,  
+Johannes
+
+<QAFooter previous={qaRoutes[3]} next={qaRoutes[5]} />

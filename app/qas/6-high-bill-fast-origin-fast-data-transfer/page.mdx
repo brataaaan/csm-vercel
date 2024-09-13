@@ -1,0 +1,33 @@
+import { qaRoutes } from "@/app/_constants/qaRoutes";
+import { QAFooter } from "@/app/_components/QAFooter";
+
+### A customer,new to Next.js and Vercel, asks about a high usage bill regarding fast origin transfer and fast data transfer. What would be the best way to help mitigate this? Feel free to use AI to help supplement your answer, but only use AI to help guide your answer and put it into your own words. You can help the customer by providing Vercel or Next.js resources if necessary.
+
+Dear [Customer Name],
+
+Thank you for reaching out with your concerns about your billing. I understand how unexpected costs can be frustrating, and I'm here to help you resolve this.
+
+As of June 25, 2024, Vercel introduced [new infrastructure pricing](https://vercel.com/blog/improved-infrastructure-pricing), which separates bandwidth into Fast Origin Transfer ($0.15/GB) and Fast Data Transfer ($0.06/GB). While most customers have seen either no change or a reduction in their bills, certain usage patterns can lead to higher costs.
+
+To clarify:
+
+- **Fast Origin Transfer** refers to data transfer between Vercel's Edge Network and your users. This happens when your content is being delivered directly to end users, and optimizing how often and how much data is sent can help reduce costs.
+- **Fast Data Transfer** refers to the data movement between Vercel's Edge Network and Vercel Compute. Reducing frequent communication between these two components is key to optimizing this area.
+
+Here are some immediate actions you can take to mitigate the high costs:
+
+- Leverage caching: Ensure static content is being cached effectively to minimize unnecessary data transfer.
+- Optimize asset size: Compress images and other large assets to reduce the total amount of data being transferred.
+- Analyze usage patterns: Look into whether large data transfers are occurring frequently and whether they’re necessary for your app's performance.
+
+For detailed guidance on optimizing usage, you can refer to these resources:
+
+- [Optimizing Fast Data Transfer](https://vercel.com/docs/pricing/networking#optimizing-fast-data-transfer)
+- [Optimizing Fast Origin Transfer](https://vercel.com/docs/pricing/networking#optimizing-fast-origin-transfer)
+
+I`d be happy to help review your current setup to identify any further optimizations. Let me know if you'd like me to walk through it with you or answer any other questions.
+
+Best regards,
+Johannes
+
+<QAFooter previous={qaRoutes[4]} next={qaRoutes[6]} />

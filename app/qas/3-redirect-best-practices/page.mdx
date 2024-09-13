@@ -1,0 +1,25 @@
+import { qaRoutes } from "@/app/_constants/qaRoutes";
+import { QAFooter } from "@/app/_components/QAFooter";
+
+### A customer has a project on Vercel and they want to know about best practices when it comes to redirects. Write a reply to the customer.
+
+Dear [Customer Name],
+
+Thank you for reaching out with your question, and for choosing Vercel for your project!
+
+When it comes to implementing redirects, here are some best practices to ensure everything runs smoothly:
+
+1. **Test thoroughly**: Always test your redirects in a preview deployment to ensure they work as expected before pushing them to production.
+2. **Use relative paths**: In the destination field, use relative paths to avoid hardcoding your domain name. This keeps your redirects flexible and easier to maintain.
+3. **Choose the correct redirect type**: Use **permanent redirects** (HTTP status code 301) for permanent URL changes and **temporary redirects** (HTTP status code 302) for temporary moves.
+4. **Be cautious with wildcards**: Wildcards are powerful but should be used carefully. For example, if you use a wildcard in a source rule that matches any URL path, you could unintentionally redirect all traffic to a single destination, which might break your site.
+5. **Prioritize HTTPS**: Use redirects to enforce HTTPS across all requests to your domain, ensuring a secure connection for your users.
+
+For more detailed information on setting up redirects on Vercel, you can refer to our [documentation](https://vercel.com/docs/edge-network/redirects#redirects).
+
+I hope this helps! If you have any further questions, please don`t hesitate to reach out.
+
+Best regards,  
+Johannes
+
+<QAFooter previous={qaRoutes[1]} next={qaRoutes[3]} />
